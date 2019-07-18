@@ -31,4 +31,3 @@ print(average_daily_revenue)
 #cortes abaixo de 30 utilizando a nova lista de preços com condicional e index
 cuts_under_30 = [hairstyles[i] for i in range(len(hairstyles)) if new_prices[i] < 30]
 print("Cortes abaixo de 30:", cuts_under_30)
-  
