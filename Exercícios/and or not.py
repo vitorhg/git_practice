@@ -1,5 +1,6 @@
 # Define variables
 import numpy as np
+
 my_kitchen = 18.0
 your_kitchen = 14.0
 
@@ -10,11 +11,11 @@ print(my_kitchen > 10 and my_kitchen < 18)
 print(my_kitchen < 14 or my_kitchen > 17)
 
 # Double my_kitchen smaller than triple your_kitchen?
-print(my_kitchen*2 < your_kitchen*3)
+print(my_kitchen * 2 < your_kitchen * 3)
 
 x = 8
 y = 9
-print(not(not(x < 3) and not(y > 14 or y > 10)))
+print(not (not (x < 3) and not (y > 14 or y > 10)))
 
 # Create arrays
 my_house = np.array([18.0, 20.0, 10.75, 9.50])

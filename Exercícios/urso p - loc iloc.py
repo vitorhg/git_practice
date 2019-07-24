@@ -1,19 +1,20 @@
 # Import cars data
 import pandas as pd
-cars = pd.read_csv('cars.csv', index_col=0)
+
+cars = pd.read_csv("cars.csv", index_col=0)
 
 # Print out country column as Pandas Series
-print(cars['country'])
+print(cars["country"])
 
 # Print out country column as Pandas DataFrame
-print(cars[['country']])
+print(cars[["country"]])
 
 # Print out DataFrame with country and drives_right columns
-print(cars[['country', 'drives_right']])
+print(cars[["country", "drives_right"]])
 
 
 # Import cars data
-cars = pd.read_csv('cars.csv', index_col=0)
+cars = pd.read_csv("cars.csv", index_col=0)
 
 # Print out first 3 observations
 print(cars[0:3])
@@ -23,37 +24,37 @@ print(cars[3:6])
 
 
 # Import cars data
-cars = pd.read_csv('cars.csv', index_col=0)
+cars = pd.read_csv("cars.csv", index_col=0)
 
 # Print out observation for Japan as series
-print(cars.loc['JAP'])
+print(cars.loc["JAP"])
 
 # Print out observations for Australia and Egypt as DataFrame
-print(cars.loc[['AUS', 'EG']])
+print(cars.loc[["AUS", "EG"]])
 
 
 # Import cars data
-cars = pd.read_csv('cars.csv', index_col=0)
+cars = pd.read_csv("cars.csv", index_col=0)
 
 # Print out drives_right value of Morocco
-print(cars.loc[['MOR'], ['drives_right']])
+print(cars.loc[["MOR"], ["drives_right"]])
 
 # Print sub-DataFrame
-print(cars.loc[['RU', 'MOR'], ['country', 'drives_right']])
+print(cars.loc[["RU", "MOR"], ["country", "drives_right"]])
 
 
-# You can also combine label-based selection the loc way and index-based selection the iloc way. 
+# You can also combine label-based selection the loc way and index-based selection the iloc way.
 # You can! It's done with ix.
 
 
 # Import cars data
-cars = pd.read_csv('cars.csv', index_col=0)
+cars = pd.read_csv("cars.csv", index_col=0)
 
 # Print out drives_right column as Series
-print(cars.loc[:, 'drives_right'])
+print(cars.loc[:, "drives_right"])
 
 # Print out drives_right column as DataFrame
-print(cars.loc[:, ['drives_right']])
+print(cars.loc[:, ["drives_right"]])
 
 # Print out cars_per_cap and drives_right as DataFrame
-print(cars.loc[:, ['cars_per_cap', 'drives_right']])
+print(cars.loc[:, ["cars_per_cap", "drives_right"]])

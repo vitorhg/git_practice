@@ -92,20 +92,20 @@ np.random.seed(123)
 all_walks = []
 
 # Simulate random walk 10 times
-for i in range(10) :
+for i in range(10):
 
     # Code from before
     random_walk = [0]
-    for x in range(100) :
+    for x in range(100):
         step = random_walk[-1]
-        dice = np.random.randint(1,7)
+        dice = np.random.randint(1, 7)
 
         if dice <= 2:
             step = max(0, step - 1)
         elif dice <= 5:
             step = step + 1
         else:
-            step = step + np.random.randint(1,7)
+            step = step + np.random.randint(1, 7)
         random_walk.append(step)
 
     # Append random_walk to all_walks
@@ -120,17 +120,17 @@ np.random.seed(123)
 
 # initialize and populate all_walks
 all_walks = []
-for i in range(10) :
+for i in range(10):
     random_walk = [0]
-    for x in range(100) :
+    for x in range(100):
         step = random_walk[-1]
-        dice = np.random.randint(1,7)
+        dice = np.random.randint(1, 7)
         if dice <= 2:
             step = max(0, step - 1)
         elif dice <= 5:
             step = step + 1
         else:
-            step = step + np.random.randint(1,7)
+            step = step + np.random.randint(1, 7)
         random_walk.append(step)
     all_walks.append(random_walk)
 
@@ -157,20 +157,20 @@ np.random.seed(123)
 
 # Simulate random walk 250 times
 all_walks = []
-for i in range(250) :
+for i in range(250):
     random_walk = [0]
-    for x in range(100) :
+    for x in range(100):
         step = random_walk[-1]
-        dice = np.random.randint(1,7)
+        dice = np.random.randint(1, 7)
         if dice <= 2:
             step = max(0, step - 1)
         elif dice <= 5:
             step = step + 1
         else:
-            step = step + np.random.randint(1,7)
+            step = step + np.random.randint(1, 7)
 
         # Implement clumsiness
-        if np.random.rand() <= 0.001 :
+        if np.random.rand() <= 0.001:
             step = 0
 
         random_walk.append(step)

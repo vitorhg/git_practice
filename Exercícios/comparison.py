@@ -1,12 +1,13 @@
 # Comparison of booleans
 import numpy as np
+
 print(True == False)
 
 # Comparison of integers
 print(-5 * 15 != 75)
 
 # Comparison of strings
-print('pyscript' == 'PyScript')
+print("pyscript" == "PyScript")
 
 # Compare a boolean with an integer
 print(True == 1)
@@ -17,7 +18,7 @@ print(x >= -10)
 
 # Comparison of strings
 y = "test"
-print('test' <= y)
+print("test" <= y)
 
 # Comparison of booleans
 print(True > False)
