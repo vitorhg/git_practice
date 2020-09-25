@@ -1,7 +1,6 @@
 #include <iostream>
 #include "fns.hpp"
 
-
 int main() {
   
   std::cout << is_palindrome("noon") << "\n";
@@ -9,3 +8,4 @@ int main() {
   std::cout << average(4.0, 7.0) << "\n";
   
 }
+//g++ main.cpp fns.cpp
