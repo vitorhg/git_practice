@@ -1,7 +1,6 @@
 .vscode/**
 .vscode/settings.json
 .ipynb_checkpoints/**
-TODO
 .gitignore
 # Numerous always-ignore extensions
 *.diff
