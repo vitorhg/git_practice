@@ -23,8 +23,8 @@ int main() {
 
   }
 
-  std::cout << "Sum of even numbers is " << total_even << "\n";
-  std::cout << "Product of odd numbers is " << product_odd << "\n";
+  std::cout << "Soma dos pares " << total_even << "\n";
+  std::cout << "Produto dos ímpares " << product_odd << "\n";
 
   return 0;
 
