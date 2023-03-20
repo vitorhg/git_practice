@@ -27,4 +27,5 @@ def append_sum(lst):
     # retorna a lista modificada com os novos elementos adicionados
     return lst
 
+
 print(append_sum([1, 1, 2]))
